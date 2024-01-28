@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>音乐播放器</title>  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
+</head>  
+<body>  
+  <div class="container">  
+    <h1 class="text-center">音乐播放器</h1>  
+    <div class="row">  
+      <div class="col-md-6">  
+        <div class="card">  
+          <div class="card-body">  
+            <audio id="audio" controls>  
+              <source src="song.mp3" type="audio/mpeg">  
+              您的浏览器不支持 audio 标签。  
+            </audio>  
+          </div>  
+        </div>  
+      </div>  
+      <div class="col-md-6">  
+        <div class="card">  
+          <div class="card-body">  
+            <h2>播放列表</h2>  
+            <ul id="playlist">  
+              <!-- 动态添加歌曲列表 -->  
+            </ul>  
+          </div>  
+        </div>  
+      </div>  
+    </div>  
+  </div>  
+  <script>  
+    // 获取音频元素和播放列表元素  
+    const audio = document.getElementById("audio");  
+    const playlist = document.getElementById("playlist");  
+    
+    // 添加歌曲到播放列表函数（根据实际情况获取歌曲列表）  
+    function addSongToPlaylist(songUrl) {  
+      const li = document.createElement("li");  
+      li.textContent = songUrl; // 仅作示例，你可以添加更多歌曲信息到列表项中  
+      playlist.appendChild(li);  
+    }  
+    
+    // 动态添加歌曲到播放列表（此处仅作示例，你需要添加逻辑来获取歌曲列表）  
+    addSongToPlaylist("song1.mp3"); // 示例歌曲URL，需要根据实际情况替换为你的歌曲文件路径或URLs数组。  
+  </script>  
+</body>  
+</html>
