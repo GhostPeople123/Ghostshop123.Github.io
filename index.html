@@ -2,88 +2,11 @@
 <html>  
 <head>  
   <title>音乐播放器</title>  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>  
 </head>  
 <body>  
-  <div class="container">  
-    <h1 class="text-center">音乐播放器</h1>  
-    <div class="row">  
-      <div class="col-md-6">  
-        <div class="card">  
-          <div class="card-body">  
-            <audio id="audio" controls>  
-              <source src="song.mp3" type="audio/mpeg">  
-              您的浏览器不支持 audio 标签。  
-            </audio>  
-          </div>  
-        </div>  
-      </div>  
-      <div class="col-md-6">  
-        <div class="card">  
-          <div class="card-body">  
-            <h2>播放列表</h2>  
-            <ul id="playlist">  
-              <!-- 动态添加歌曲列表 -->  
-            </ul>  
-            <h2>专辑封面</h2>  
-            <img id="album-cover" src="" alt="专辑封面">  
-          </div>  
-        </div>  
-      </div>  
-    </div>  
-    <div class="row">  
-      <div class="col-md-6">  
-        <div class="card">  
-          <div class="card-body">  
-            <h2>音乐信息</h2>  
-            <p id="song-info"></p>  
-          </div>  
-        </div>  
-      </div>  
-      <div class="col-md-6">  
-        <div class="card">  
-          <div class="card-body">  
-            <h2>歌词显示</h2>  
-            <div id="lyrics"></div>  
-          </div>  
-        </div>  
-      </div>  
-    </div>  
-    <div class="row">  
-      <div class="col-md-12">  
-        <div class="card">  
-          <div class="card-body">  
-            <h2>音乐播放器控件</h2>  
-            <button id="play-button" type="button" class="btn btn-primary">播放/暂停</button>  
-            <button id="next-button" type="button" class="btn btn-secondary">下一曲</button>  
-            <button id="prev-button" type="button" class="btn btn-secondary">上一曲</button>  
-          </div>  
-        </div>  
-      </div>  
-    </div>  
-  </div>  
-  <script>  
-    // 获取音频元素、播放列表元素、专辑封面元素、歌曲信息元素、歌词显示元素和播放器控件元素  
-    const audio = document.getElementById("audio");  
-    const playlist = document.getElementById("playlist");  
-    const albumCover = document.getElementById("album-cover");  
-    const songInfo = document.getElementById("song-info");  
-    const lyrics = document.getElementById("lyrics");  
-    const playButton = document.getElementById("play-button");  
-    const nextButton = document.getElementById("next-button");  
-    const prevButton = document.getElementById("prev-button");  
-    
-    // 添加歌曲到播放列表函数（根据实际情况获取歌曲列表）  
-    function addSongToPlaylist(songUrl) {  
-      const li = document.createElement("li");  
-      li.textContent = songUrl; // 仅作示例，你可以添加更多歌曲信息到列表项中  
-      playlist.appendChild(li);  
-    }  
-    
-    // 动态添加歌曲到播放列表（此处仅作示例，你需要添加逻辑来获取歌曲列表）  
-    addSongToPlaylist("hmusic.163.com/song?id=2015001216&userid=514701551"); // 示例歌曲URL，需要根据实际情况替换为你的歌曲文件路径或URLs数组。  
-    
-    // 更新专辑封面和歌曲信息函数（根据实际情况获取封面和信息）  
-    function updateAlbumCoverAndSongInfo(albumCoverUrl, songTitle, songArtist) {  
-      album
+  <audio controls>  
+    <source src="song1.mp3" type="audio/mpeg">  
+    您的浏览器不支持 audio 标签。  
+  </audio>  
+</body>  
+</html>
